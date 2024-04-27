@@ -13,7 +13,7 @@ async function createPokemonCard(pokemonName) {
     const pokemonList = document.getElementById('pokemonList');
 
     const card = document.createElement('div');
-    card.classList.add('bg-white', 'hover:bg-gray-500', 'rounded-lg', 'shadow-xl', 'shadow-green', 'p-4', 'cursor-pointer'); // Añadida la clase 'shadow-black'
+    card.classList.add('bg-red', 'hover:bg-gray-500', 'rounded-lg', 'shadow-xl', 'shadow-green', 'p-4', 'cursor-pointer'); // Añadida la clase 'shadow-black'
     card.innerHTML = `
         <img src="${pokemonData.sprites.front_default}" alt="${pokemonName} Image" class="mx-auto">
         <h2 class="text-center font-semibold mt-2 hover:text-white">${pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1)}</h2>
